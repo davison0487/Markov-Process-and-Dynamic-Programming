@@ -1,4 +1,6 @@
 # Markov Process and Dynamic Programming
+Motion planning is a crucial part in robotics problems. Usually there are obstacles in different environments and we cannot simply ignore noises. Hence, we need to determine a best policy for the robot at current state to make decisions for control input. In this project, we are working in a door and key environment. The goal is to get our agent to goal location. If the agent ever encounter a door, he has to pick up the key in order to unlock and get pass the door. However, there are some cases that there exists a short cut that he can walk directly to treasure location without going through the door. We are assuming our environment is well observed by the robot (agent) and every motion input is non-stochastic. By applying Markov Decision Process and dynamic programming algorithm, we can obtain a best policy to reach the goal at each time step and each state.
+
 
 ### 1. doorkey.py
 Main script generates optimal policy and saves into gif files into './gif' with implementation of dynamic programming algorithm 
